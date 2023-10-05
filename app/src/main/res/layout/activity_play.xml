@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/brgRel"
+    tools:context=".PlayActivity">
+
+    <ImageView
+        android:id="@+id/brgImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_theme_home" />
+
+    <RelativeLayout
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/backImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_back"/>
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/backImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: 00:34"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/pointTv"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điểm: 0"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/gunImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/img_gun"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-50dp"/>
+    <RelativeLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/gunImg"
+        android:background="@drawable/img_brg_point"
+        android:layout_width="100dp"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/countBulletTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/inter"
+            android:text="Đạn: 300"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
