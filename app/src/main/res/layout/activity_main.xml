@@ -20,12 +20,40 @@
             android:layout_height="150dp"
             android:src="@drawable/img_logo"/>
         <ImageView
+            android:visibility="invisible"
             android:layout_centerHorizontal="true"
             android:id="@+id/playImg"
             android:layout_below="@id/logoImg"
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:src="@drawable/img_play"/>
+            android:src="@drawable/img_choithu"/>
+        <ImageView
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/historyImg"
+            android:layout_below="@id/playImg"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_history"/>
+        <ImageView
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/dangkyImg"
+            android:layout_below="@id/historyImg"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:src="@drawable/img_dangky"/>
+        <ImageView
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/dangnhapImg"
+            android:layout_below="@id/dangkyImg"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_dangnhap"/>
     </RelativeLayout>
 
 

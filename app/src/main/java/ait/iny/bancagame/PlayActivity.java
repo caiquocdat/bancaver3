@@ -31,7 +31,7 @@ public class PlayActivity extends AppCompatActivity {
     private ArrayList<Integer> fishImagesLeft;
     private ArrayList<Integer> fishImagesRight;
     private CountDownTimer countDownTimer;
-    private long timeInMillis = 180000;
+    private long timeInMillis = 580000;
     private int point = 0;
     private int countBullet = 300;
 
@@ -93,8 +93,7 @@ public class PlayActivity extends AppCompatActivity {
                         shootBullet(touchX, touchY); // Gọi hàm để bắn viên đạn
                     }
                 }else{
-                    Toast.makeText(PlayActivity.this, "Bạn đã thua vì hết đạn!", Toast.LENGTH_SHORT).show();
-                    finish();
+                   countBullet=300;
                 }
                 return true; // Trả về true để thông báo rằng sự kiện đã được xử lý
             }
@@ -115,6 +114,8 @@ public class PlayActivity extends AppCompatActivity {
             public void onFinish() {
                 // Xử lý khi thời gian kết thúc, ví dụ thông báo hết giờ
                 Toast.makeText(PlayActivity.this, "Yeah bạn đã giành được " + point + " điểm!", Toast.LENGTH_SHORT).show();
+                DatabaseHelper db= new DatabaseHelper(PlayActivity.this);
+                db.insertData(point);
                 finish();
             }
         }.start();
@@ -138,7 +139,7 @@ public class PlayActivity extends AppCompatActivity {
 
         AnimatorSet bulletAnimatorSet = new AnimatorSet();
         bulletAnimatorSet.playTogether(bulletXAnimator, bulletYAnimator);
-        bulletAnimatorSet.setDuration(1000); // Độ dài thời gian di chuyển
+        bulletAnimatorSet.setDuration(500); // Độ dài thời gian di chuyển
         bulletAnimatorSet.start();
 
         bulletAnimatorSet.addListener(new AnimatorListenerAdapter() {
