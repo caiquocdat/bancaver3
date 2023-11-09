@@ -11,53 +11,48 @@
         android:id="@+id/brgImg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/img_theme_home" />
+        android:scaleType="fitXY"
+        android:src="@drawable/img_theme_play_new" />
 
     <RelativeLayout
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="50dp">
         <ImageView
-            android:id="@+id/backImg"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/resumImg"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/img_back"/>
+            android:src="@drawable/img_resum"/>
+
         <TextView
             android:id="@+id/timeTv"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="30dp"
-            android:layout_toRightOf="@id/backImg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Time: 00:34"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            android:fontFamily="@font/inter"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/pointTv"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="150dp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/internbold"
+            android:text="20s"
+            android:textColor="#FEAC45"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/caiDatImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_setting"
             android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Điểm: 0"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            android:fontFamily="@font/inter"
-            android:textStyle="bold"/>
+            android:layout_marginRight="20dp"/>
     </RelativeLayout>
     <ImageView
         android:id="@+id/gunImg"
         android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/img_gun"
+        android:layout_height="70dp"
+        android:src="@drawable/img_sung"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="-50dp"/>
+       />
     <RelativeLayout
+        android:visibility="gone"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:layout_alignParentBottom="true"
@@ -77,5 +72,44 @@
             android:textSize="15sp"
             android:textStyle="bold" />
     </RelativeLayout>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lv1"
+            android:textSize="28sp"
+            android:textColor="#FEAC45"
+            android:fontFamily="@font/internbold"
+           />
+        <ProgressBar
+            android:max="1000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/progress_bar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/custom_progressbar" />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lv2"
+            android:textSize="28sp"
+            android:textColor="#FEAC45"
+            android:fontFamily="@font/internbold"
+            />
+    </LinearLayout>
+
 
 </RelativeLayout>

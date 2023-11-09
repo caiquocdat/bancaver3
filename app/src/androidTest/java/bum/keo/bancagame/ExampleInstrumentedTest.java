@@ -1,4 +1,4 @@
-package ait.iny.bancagame;
+package bum.keo.bancagame;
 
 import android.content.Context;
 

@@ -8,53 +8,35 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/img_theme_brg"
+        android:src="@drawable/img_theme_splash"
         android:scaleType="centerCrop"/>
-    <RelativeLayout
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/logoImg"
-            android:layout_width="250dp"
-            android:layout_height="150dp"
-            android:src="@drawable/img_logo"/>
-        <ImageView
-            android:visibility="invisible"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/playImg"
-            android:layout_below="@id/logoImg"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:src="@drawable/img_choithu"/>
-        <ImageView
-            android:visibility="invisible"
-            android:layout_marginTop="10dp"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/historyImg"
-            android:layout_below="@id/playImg"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:src="@drawable/img_history"/>
-        <ImageView
-            android:visibility="invisible"
-            android:layout_marginTop="10dp"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/dangkyImg"
-            android:layout_below="@id/historyImg"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:src="@drawable/img_dangky"/>
-        <ImageView
-            android:visibility="invisible"
-            android:layout_marginTop="10dp"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/dangnhapImg"
-            android:layout_below="@id/dangkyImg"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:src="@drawable/img_dangnhap"/>
-    </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/custom_progressbar" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:fontFamily="@font/inter"
+            android:textSize="22sp"
+            android:id="@+id/text_view"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="loading..."
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
 
 
 

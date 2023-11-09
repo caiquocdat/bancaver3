@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "BanCaGame"
+rootProject.name = "GameBanCaVer2"
 include(":app")
  

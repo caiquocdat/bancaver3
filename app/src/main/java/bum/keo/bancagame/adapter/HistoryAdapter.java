@@ -1,4 +1,4 @@
-package ait.iny.bancagame.adapter;
+package bum.keo.bancagame.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import ait.iny.bancagame.R;
+import bum.keo.bancagame.R;
 
 
 public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHolder> {

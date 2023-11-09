@@ -1,4 +1,4 @@
-package ait.iny.bancagame;
+package bum.keo.bancagame;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,8 +8,9 @@ import android.view.View;
 
 import java.util.ArrayList;
 
-import ait.iny.bancagame.adapter.HistoryAdapter;
-import ait.iny.bancagame.databinding.ActivityHistoryBinding;
+import bum.keo.bancagame.adapter.HistoryAdapter;
+import bum.keo.bancagame.databinding.ActivityHistoryBinding;
+
 
 public class HistoryActivity extends AppCompatActivity {
     private ActivityHistoryBinding activityHistoryBinding;
