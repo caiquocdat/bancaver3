@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:src="@drawable/img_tamdung"/>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/choiLaiImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_choilai"/>
+            <ImageView
+                android:id="@+id/choiTiepImg"
+                android:layout_marginLeft="50dp"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_choitiep"/>
+            <ImageView
+                android:id="@+id/thoatImg"
+                android:layout_marginLeft="50dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_thoat"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
