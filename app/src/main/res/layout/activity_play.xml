@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/brgRel"
-    tools:context=".PlayActivity">
+    tools:context="bum.keo.heo.PlayActivity">
 
     <ImageView
         android:id="@+id/brgImg"
@@ -32,16 +32,35 @@
             android:layout_centerInParent="true"
             android:fontFamily="@font/internbold"
             android:text="20s"
-            android:textColor="#FEAC45"
+            android:textColor="#9C32DB"
             android:textSize="35sp"
             android:textStyle="bold" />
-        <ImageView
-            android:id="@+id/caiDatImg"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/img_setting"
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:max="1000"
+                android:progressDrawable="@drawable/custom_progressbar" />
+
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:src="@drawable/img_target"/>
+        </LinearLayout>
     </RelativeLayout>
     <ImageView
         android:id="@+id/gunImg"
@@ -72,44 +91,7 @@
             android:textSize="15sp"
             android:textStyle="bold" />
     </RelativeLayout>
-    <LinearLayout
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lv1"
-            android:textSize="28sp"
-            android:textColor="#FEAC45"
-            android:fontFamily="@font/internbold"
-           />
-        <ProgressBar
-            android:max="1000"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_gravity="center_vertical"
-            android:id="@+id/progress_bar"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            style="@android:style/Widget.ProgressBar.Horizontal"
-            android:progressDrawable="@drawable/custom_progressbar" />
-        <TextView
-            android:id="@+id/tv2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lv2"
-            android:textSize="28sp"
-            android:textColor="#FEAC45"
-            android:fontFamily="@font/internbold"
-            />
-    </LinearLayout>
+
 
 
 </RelativeLayout>

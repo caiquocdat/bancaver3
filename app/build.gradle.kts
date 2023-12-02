@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "bum.keo.bancagame"
+    namespace = "bum.keo.heo"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "bum.keo.bancagame"
+        applicationId = "bum.keo.heo"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

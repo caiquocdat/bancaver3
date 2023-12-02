@@ -9,7 +9,7 @@
     <item android:id="@android:id/progress">
         <clip>
             <shape>
-                <solid android:color="#FEAC45" /> <!-- màu cho phần tăng dần -->
+                <solid android:color="#9C32DB" /> <!-- màu cho phần tăng dần -->
                 <corners android:radius="20dp" /> <!-- bổ sung radius cho progress -->
             </shape>
         </clip>

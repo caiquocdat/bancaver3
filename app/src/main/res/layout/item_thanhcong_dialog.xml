@@ -6,59 +6,49 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="80dp"
+        android:id="@+id/choiTiepImg"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/thoat_2Img"
+        app:layout_constraintStart_toEndOf="@+id/thoat_1Img"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_tieptheo" />
+
+    <ImageView
+        android:id="@+id/thoat_2Img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.145"
-        app:srcCompat="@drawable/img_thanhcong" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_thoat" />
+
+    <ImageView
+        android:id="@+id/thoat_1Img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="448dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_thoat" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="200dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="28dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795"
-        app:srcCompat="@drawable/img_thanhcong_icon_1" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="200dp"
-        android:layout_height="250dp"
-        android:layout_marginEnd="28dp"
+        android:layout_width="509dp"
+        android:layout_height="176dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795"
-        app:srcCompat="@drawable/img_thanhcong_icon_2" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="56dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.165"
-        app:srcCompat="@drawable/img_choitiep" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="228dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.42"
-        app:srcCompat="@drawable/img_thoat" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187"
+        app:srcCompat="@drawable/img_item_win" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,7 +25,7 @@
             android:screenOrientation="landscape" />
         <activity
             android:screenOrientation="landscape"
-            android:name=".MainActivity"
+            android:name="bum.keo.heo.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,40 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:background="@drawable/img_brg_thatbai"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:layout_width="400dp"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/choiTiepImg"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/thoat_2Img"
+        app:layout_constraintStart_toEndOf="@+id/thoat_1Img"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_choilai_win" />
 
-        <ImageView
-            android:layout_width="300dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:src="@drawable/img_thatbai" />
+    <ImageView
+        android:id="@+id/thoat_2Img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_thoat" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:orientation="horizontal">
-            <ImageView
-                android:id="@+id/choiLaiImg"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/img_choilai"/>
-            <ImageView
-                android:id="@+id/thoatImg"
-                android:layout_marginLeft="100dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/img_thoat"/>
-        </LinearLayout>
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/thoat_1Img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="448dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_thoat" />
 
-</RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="509dp"
+        android:layout_height="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187"
+        app:srcCompat="@drawable/img_item_thatbai" />
+</androidx.constraintlayout.widget.ConstraintLayout>
